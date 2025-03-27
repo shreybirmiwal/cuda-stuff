@@ -120,7 +120,8 @@ int matrix()
         for (int j = 0; j < 4; j++)
         {
             // cols
-            cout << *((matrix + i) + ptr_array1) << endl;
+            cout << "this should be the value of the pointer (column) we are on in the matrix " << *(matrix + i) << endl;
+            cout << "this should be the address of what we want to get (col, row)" << (*(matrix + i) + j) << "now this should be the value :" << *(*(matrix + i) + j) << endl;
         }
     }
 
